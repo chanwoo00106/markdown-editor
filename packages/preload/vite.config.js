@@ -1,7 +1,7 @@
-import {chrome} from '../../.electron-vendors.cache.json';
-import {preload} from 'unplugin-auto-expose';
+import { chrome } from '../../.electron-vendors.cache.json'
+import { preload } from 'unplugin-auto-expose'
 
-const PACKAGE_ROOT = __dirname;
+const PACKAGE_ROOT = __dirname
 
 /**
  * @type {import('vite').UserConfig}
@@ -20,17 +20,17 @@ const config = {
     minify: process.env.MODE !== 'development',
     lib: {
       entry: 'src/index.ts',
-      formats: ['cjs'],
+      formats: ['cjs']
     },
     rollupOptions: {
       output: {
-        entryFileNames: '[name].cjs',
-      },
+        entryFileNames: '[name].cjs'
+      }
     },
     emptyOutDir: true,
-    reportCompressedSize: false,
+    reportCompressedSize: false
   },
-  plugins: [preload.vite()],
-};
+  plugins: [preload.vite()]
+}
 
-export default config;
+export default config

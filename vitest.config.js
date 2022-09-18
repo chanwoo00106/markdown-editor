@@ -16,8 +16,8 @@ const config = {
      * The default timeout of 5000ms is sometimes not enough for playwright.
      */
     testTimeout: 30_000,
-    hookTimeout: 30_000,
-  },
-};
+    hookTimeout: 30_000
+  }
+}
 
-export default config;
+export default config
