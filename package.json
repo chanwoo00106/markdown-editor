@@ -49,6 +49,14 @@
     "vitest": "0.23.2"
   },
   "dependencies": {
+    "@codemirror/commands": "^6.1.0",
+    "@codemirror/gutter": "^0.19.9",
+    "@codemirror/highlight": "^0.19.8",
+    "@codemirror/history": "^0.19.2",
+    "@codemirror/lang-javascript": "^6.1.0",
+    "@codemirror/language": "^6.2.1",
+    "@codemirror/matchbrackets": "^0.19.4",
+    "@codemirror/state": "^6.1.1",
     "electron-updater": "5.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
