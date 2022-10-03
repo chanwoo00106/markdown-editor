@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useCallback, useEffect, useRef } from 'react'
 import useCodeMirror from './useCodeMirror'
+import './Editor.css'
 
 interface Props {}
 
@@ -11,11 +12,10 @@ const Editor: React.FC<Props> = () => {
 
   useEffect(() => {
     if (editorView) {
-      //
     }
   }, [editorView])
 
-  return <div ref={refContainer} className="editor-wrapper"></div>
+  return <div style={{ minHeight: '100vh' }} ref={refContainer} />
 }
 
 export default Editor
