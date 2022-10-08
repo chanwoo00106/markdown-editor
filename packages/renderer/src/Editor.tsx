@@ -19,10 +19,17 @@ const Editor: React.FC<Props> = ({ onChange, initialDoc }) => {
 
   useEffect(() => {
     if (editorView) {
+      //
     }
   }, [editorView])
 
-  return <div style={{ minHeight: '100vh' }} ref={refContainer} />
+  return (
+    <div
+      className="editor-wrapper"
+      style={{ minHeight: '100vh' }}
+      ref={refContainer}
+    />
+  )
 }
 
 export default Editor
